@@ -1,0 +1,227 @@
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.NewsPaper{
+    display: grid;
+    grid-template-columns: 34% 40% 26%;
+    grid-template-rows: 35% 21% 44%;
+    height: 100%;
+    margin: 40px;
+}
+.header{
+    grid-area: 1 / 1 / 2 / 3;
+    display: grid;
+    grid-template-columns: 18% 82%;
+    grid-template-rows: 10% 65% 23% 2%;
+}
+.Proletarii{
+    grid-area: 1 / 1 / 1 / 3;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.HeadName{
+    grid-area: 2 / 1 / 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:PravdaNewsPaper;
+    font-size: 168pt;
+    font-weight: bold;
+    letter-spacing: 17px;
+    color: #252627;
+}
+.HeadName img{
+    position: absolute;
+    top: 90px;
+    left: 45px;
+}
+.Osnovanie{
+    grid-area: 3 / 1 / 3 / 1;
+    position: absolute;
+    text-align: justify;
+    top: 290px;
+    line-height: 5px;
+    letter-spacing: 8px;
+}
+.HeadDate{
+    grid-area: 3 / 2 / 3 / 3;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 300px;
+    left: 315px;
+}
+.HeadDate p{
+    font-weight: bold;
+    letter-spacing: 7px;
+    margin: 5px;
+}
+#org{
+    position: absolute;
+    margin: 10px;
+}
+.liner{
+    height: 3px;
+    width: 98%;
+    margin-top: 40px;
+    background-color: black;
+}
+.line{
+    grid-area: 4 / 1 / 4 / 3;
+    display: flex;
+    justify-content: flex-start;
+    height: 4px;
+    width: 98%;
+    background-color: black;
+}
+.HeadNews{
+    grid-area: 1 / 3 / 3 / 3;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 5px;
+    border: 2px solid black;
+}
+.HeadNews p{
+    margin: 0;
+}
+#Zagolovok{
+    font-size: 30pt;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.NewsPic{
+    grid-area: 2 / 1 / 4 / 2;
+    border: 2px solid black;
+}
+.NewsPic p{
+    margin: 15px;
+}
+.NewsPic img{
+    margin-left: 15px;
+    border: 2px solid black;
+}
+.LabelBox{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    background-color: rgba(194, 194, 194, 0.616);
+    font-size: 16pt;
+}
+.BigZagolovok{
+    display: flex;
+    justify-content: center;
+    font-size: 60pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.CenterNews{
+    grid-area: 2 / 2 / 2 / 3;
+    border: 2px solid black;
+    background-color: rgba(194, 194, 194, 0.616);
+    margin: 20px 20px 0 5px;
+    padding: 20px 50px 10px 30px;
+}
+.CenterNews h4{
+    margin: 0;
+}
+.CenterNews p{
+    margin: 0;
+    font-size: 8pt;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+.str{
+    display: flex;
+    font-size: 12pt;
+    justify-content: flex-end;
+}
+.soderjanie{
+    position: absolute;
+    border: 2px solid black;
+    top: 376px; left: 690px;
+    background-color: rgba(119, 117, 117, 1);
+}
+.soderjanie h2{
+    margin: 0 5px 0 5px;
+    color: white;
+}
+.BigNews{
+    grid-area: 3 / 2 / 3 / 4;
+    display: grid;
+    grid-template-rows: 9% 23% 23% 45%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.BigNewsZagolovok{
+    grid-area: 2 / 2 / 4 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 59pt;
+    padding: 25px;
+    letter-spacing: 10px;
+    line-height: 60px;
+}
+.BigNewsAuthor{
+    grid-area: 1 / 2 / 1 / 6;
+    font-size: 20pt;
+}
+.BigNewsAuthor p{
+    padding: 5px;
+    margin: 0;
+}
+.BigNews1{
+    grid-area: 1 / 1 / 3 / 2;
+    padding: 0 10px 0 25px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 11pt;
+}
+.BigNews2{
+    grid-area: 3 / 1 / 5 / 2;
+    padding: 20px 10px 0 10px;
+    font-size: 10pt;
+    text-align: justify;
+}
+.BigNews2 h4{
+    text-align: center;
+    padding: 0 15px 0 15px;
+}
+.BigNews3{
+    grid-area: 4 / 2 / 5 / 3;
+    padding: 20px 10px 0 10px;
+    font-size: 10pt;
+    text-align: justify;
+}
+.BigNews4{
+    grid-area: 4 / 3 / 5 / 4;
+    padding: 20px 10px 0 10px;
+    font-size: 10pt;
+    text-align: justify;
+}
+.BigNews5{
+    grid-area: 4 / 4 / 5 / 5;
+    padding: 20px 10px 0 10px;
+    font-size: 10pt;
+    text-align: justify;
+}
+.BigNews6{
+    grid-area: 4 / 5 / 5 / 6;
+    padding: 20px 10px 0 10px;
+    font-size: 10pt;
+    text-align: justify;
+}
+
+@font-face{
+    font-family: "PravdaNewsPaper";  
+    src: url("fonts/pravdanewspapercyr_eng.otf") format("OpenType"); 
+    font-style: normal; 
+    font-weight: normal;
+}
